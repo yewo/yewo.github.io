@@ -1,0 +1,174 @@
+/*************
+    页面样式
+**************/
+
+/*  =========
+    基本默认值
+    ========= */
+
+* {
+    margin:0;
+    padding: 0;
+}
+html {
+    font-size: 100%;
+    font-family: "Helvetica","Arial",sans-serif;
+    font-weight:300;
+    color: #7b8b8e;
+}
+
+body {
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
+}
+
+a {
+    color: #7b8b8e;
+    transition: color 300ms 0s ease,
+    background 0.5s ease;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #4b5658;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    display: flex;
+    padding: 1rem 2rem 0.8rem;
+}
+
+.logo {
+    font-size: 1.2rem;
+    color: #5fcf80;
+}
+
+.nav {
+    flex: 1;
+}
+
+.nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav li {
+    margin-right: 2rem;
+}
+
+.nav li:last-child {
+    margin-right: 0;
+}
+
+.nav li a {
+    display: block;
+}
+
+.nav li img {
+    vertical-align: middle;
+    border-radius: 2px;
+    margin-right: 6px;
+}
+
+main {
+    flex: 1;
+}
+
+
+
+/*    video 样式   */
+
+.view {
+    padding: 10px;
+    background-color: #f3f5f7;
+}
+
+.view section {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.view h2 {
+    line-height: 3;
+    padding-left: 1.5%;
+    color: #333;
+}
+
+.video-list {
+    width: 100%;
+    overflow: hidden;
+}
+
+.video-list li {
+    width: 25%;
+    float: left;
+    padding: 1.5%;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+@media (max-width:600px) {
+    .video-list li {
+        width: 50%;
+    }
+}
+
+@media (min-width:900px) {
+    .video-list li {
+        width: 20%;
+    }
+}
+
+.video-list li a {
+    display: block;
+    position: relative;
+    padding-top: 75%;
+    text-decoration: none;
+    color: #666;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.video-list li a:hover {
+    box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.5);
+    color: #333;
+}
+
+.video-list li img {
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+.video-list li p {
+    background-color: #fff;
+    line-height: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 14px;
+    text-align: center;
+    padding: 0 1em;
+}
+
+
+/*   底部样式  */
+
+.cy {
+    text-align: center;
+    padding: 1rem 0;
+    background: #2d3033;
+}
