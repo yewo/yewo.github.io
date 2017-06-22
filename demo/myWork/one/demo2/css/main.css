@@ -1,0 +1,297 @@
+/***********
+   基本样式
+ ***********/
+body {
+    font-family: "Microsoft YaHei UI";
+}
+a {
+    text-decoration: none;
+}
+.hr {
+    width: 28px;
+    height: 1.8px;
+    background: #07cbc9;
+    margin: 0 auto;
+}
+button {
+    width: 74px;
+    height: 32px;
+    font-size: 12px;
+    background: #000;
+    color: #fff;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+button:hover {
+    color: #000;
+    border: 1px solid #000;
+    background: #fff;
+    opacity: 0.5
+
+}
+.clearfix::after {
+    content: ' ';
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+}
+/*header section*/
+.header {
+    width: 100%;
+    height: 80px;
+    background: #07CBCA;
+}
+.header .logo {
+    padding: 14px 0 0 50px;
+    float: left;
+}
+.header ul {
+    float: right;
+    text-align: center;
+    padding-right: 50px;
+    margin: 0 auto;
+}
+.header ul li {
+    float: left;
+    list-style: none;
+}
+.header ul li a {
+    display: block;
+    width: 100px;
+    height: 80px;
+    line-height: 80px;
+    color: #ececec;
+}
+.header ul li a:hover {
+    color: #fff;
+}
+.header ul li:hover {
+    background-color: #000;
+}
+
+/*banner section*/
+.banner {
+    width: 100%;
+    height: 600px;
+}
+.banner .wrap img {
+    width: 100%;
+    height: 600px;
+}
+.banner .masklayer {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 600px;
+}
+.banner .masklayer-top {
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    top: 400px;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -250px;
+    z-index: 2;
+}
+.banner .masklayer-top form {
+    width: 400px;
+    height: 300px;
+    margin: 0 auto;
+    font-size: 14px;
+    font-family:;
+    z-index: 3;
+}
+.banner .masklayer-top table td input {
+    width: 400px;
+    height: 30px;
+    margin-top: 14px;
+}
+.banner .masklayer-top table td textarea {
+    width: 396px;
+    height: 100px;
+    margin-top: 14px;
+}
+.banner .masklayer-top table td .wrap {
+    width: 130px;
+    height: 40px;
+    margin: 20px 150px;
+    cursor: pointer;
+}
+.banner .masklayer-top table input,
+textarea,
+td.wrap
+{
+    background: rgba(0,0,0,0.1);
+    border: 1px solid #999;
+    color: #bbb;
+    font-size: 14px;
+}
+.banner .masklayer-top table  input:hover {
+    border: 1px solid #07cbc9;
+}
+.banner .masklayer-top table  textarea:hover {
+    border: 1px solid #07cbc9;
+}
+.banner .masklayer-top table td .wrap:hover {
+    background: #07cbc9;
+    color: #fff;
+}
+
+/*about section*/
+.about .about-top {
+    width: 100%;
+    height: 700px;
+    background: #fff;
+}
+/*about-top section middle*/
+
+.about .middle {
+    width: 500px;
+    height: 600px;
+    /*background: #ccc;*/
+    position: absolute;
+    top: 750px;
+    left: 50%;
+    margin-left: -250px;
+    text-align: center;
+}
+.about .middle p {
+    font-size: 14px;
+    color: #999;
+    line-height: 1.8em;
+}
+.about .middle img {
+    width: 500px;
+    height: 320px;
+    padding-top: 12px;
+}
+/*about-top section left*/
+.about .left {
+    width: 300px;
+    height: 300px;
+    /*background: #ccc;*/
+    position: absolute;
+    top: 930px;
+    left: 18%;
+    z-index: 2;
+}
+.about .left h2 {
+    padding-left: 10px;
+    font-weight: lighter;
+}
+.about .left .more {
+    width: 260px;
+    height: 210px;
+    background: rgba(100%,100%,100%,0.5);
+    border: 1px solid #ccc;
+    padding-left: 20px;
+}
+.about .left .more p {
+    font-size: 14px;
+    line-height: 1.8em;
+}
+
+/*about-top section right*/
+.about .right {
+    width: 300px;
+    height: 300px;
+    /*background: #ccc;*/
+    position: absolute;
+    top: 918px;
+    left: 71%;
+}
+.about .right .wrap {
+    width: 160px;
+    height: 120px;
+    border: 1px solid #07cbc9;
+    text-align: center;
+    margin-top: 28px;
+}
+.about .right .wrap p {
+    font-weight: bold;
+}
+/*about-bottom section*/
+.about-bottom {
+    width: 100%;
+    background: #ccc;
+}
+.about-bottom .content {
+    width: 25%;
+    background: #07cbc9;
+    float: left;
+    box-sizing: border-box;
+}
+.about-bottom .content img {
+    width: 100%;
+    height: 300px;
+}
+.about-bottom .content .article {
+    height: 256px;
+    color: #fff;
+    margin: 22px 30px;
+}
+.about-bottom .content .article h3 {
+    font-size: 22px;
+    font-weight: lighter;
+    margin: 0;
+
+}
+.about-bottom .content .article .intro{
+    font-size: 14px;
+    color: #cfcfde;
+}
+.about-bottom .content .article button {
+    margin-left: 30%;
+}
+
+/*gallery section*/
+.gallery {
+    width: 100%;
+    height: 700px;
+    background: #fff;
+    margin: 0 auto;
+}
+.gallery .wrap {
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.gallery .wrap p {
+    font-size: 14px;
+    color: #92929c;
+}
+.gallery .container {
+    width: 720px;
+    margin: 0 auto;
+}
+.gallery .container .info {
+    width: 220px;
+    background: #000;
+    float: left;
+    margin: 10px;
+}
+.gallery .container .info img {
+    width: 220px;
+    height: 150px;
+}
+.gallery .container .info p {
+    color: #fff;
+    font-size: 12px;
+    padding-bottom: 6px;
+    padding-left: 1em;
+}
+
+/*footer section*/
+.footer {
+    width: 100%;
+    height: 100px;
+    background: #07cbc9;
+    color: #fff;
+    text-align: center;
+    line-height: 100px;
+}

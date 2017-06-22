@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS布局</title>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!--header section-->
+    <div class="header">
+        <div class="logo">
+            <a href="#"><img src="img/logo.png" alt="logo"></a>
+        </div>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">GALLERY</a></li>
+            <li><a href="#">FACULTY</a></li>
+            <li><a href="#">EVENTS</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </div>
+    <!--banner section-->
+    <div class="banner">
+        <!--大图-->
+        <div class="wrap">
+            <img src="img/banner3.jpg" alt="banner">
+        </div>
+        <!--遮罩层-->
+        <div class="masklayer"></div>
+        <!--遮罩层上的表单-->
+        <div class="masklayer-top">
+            <form>
+                <table>
+                    <tr>
+                        <td><input type="text" name="username" placeholder="&nbsp;&nbsp;your Name"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="userphone" placeholder="&nbsp;&nbsp;your Phone"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="email" name="useremail" placeholder="&nbsp;&nbsp;your Email"></td>
+                    </tr>
+                    <tr>
+                        <td><textarea name="comment" placeholder="&nbsp;&nbsp;Write Your Comment Here"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><input class="wrap" type="submit" value="SEND MESSAGE"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <!--about section-->
+    <div class="about">
+        <!--about-top section-->
+        <div class="about-top">
+            <div class="left">
+                <h2>&nbsp;A WORD<br/>ABOUT US</h2>
+                <div class="more">
+                    <p>Praesent dignissim viverra est,sed bibendum ligula congue non.Sed ac nisl et felis gravida commodo? Suspendisse eget ullamcorper ipsum. Suspendisse diam amet;</p>
+                    <button>EXPLORE</button>
+                </div>
+            </div>
+            <div class="middle">
+                <h1>ABOUT</h1>
+                <div class="hr"></div>
+                <p>Lorem Ipsum is simple dummy text of the printing and typesetting<br/>
+                    industry. Lorem Ipsum has been the industry's standard dummy<br/>
+                    text ever since the 1500s.
+                </p>
+                <img src="img/bb3.jpg" alt="bg3">
+            </div>
+            <div class="right">
+                <div class="wrap">
+                    <h2>70000</h2>
+                    <div class="hr"></div>
+                    <p>Students</p>
+                </div>
+                <div class="wrap">
+                    <h2>600</h2>
+                    <div class="hr"></div>
+                    <p>Faculty</p>
+                </div>
+            </div>
+        </div>
+        <!--about-bottom section-->
+        <div class="about-bottom">
+            <div class="content">
+                <img src="img/b1.jpg" alt="b1">
+                <div class="article">
+                    <h3>Conference Hall</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                    <p class="intro">Lorem Ipsum been the industry's standerd dummy text ever since the 1500s, when an unknow printer took scrambled it to make a type specimen book.</p>
+                    <button>EXPLORE</button>
+                </div>
+            </div>
+            <div class="content">
+                <div class="article">
+                    <h3>Library</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                    <p class="intro">Lorem Ipsum been the industry's standerd dummy text ever since the 1500s, when an unknow printer took scrambled it to make a type specimen book.</p>
+                    <button>EXPLORE</button>
+                </div>
+                <img src="img/b3.jpg" alt="b3">
+            </div>
+            <div class="content">
+                <img src="img/b2.jpg" alt="b2">
+                <div class="article">
+                    <h3>Play Ground</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                    <p class="intro">Lorem Ipsum been the industry's standerd dummy text ever since the 1500s, when an unknow printer took scrambled it to make a type specimen book.</p>
+                    <button>EXPLORE</button>
+                </div>
+            </div>
+            <div class="content">
+                <div class="article">
+                    <h3>Computer Lab</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                    <p class="intro">Lorem Ipsum been the industry's standerd dummy text ever since the 1500s, when an unknow printer took scrambled it to make a type specimen book.</p>
+                    <button>EXPLORE</button>
+                </div>
+                <img src="img/b4.jpg" alt="b4">
+            </div>
+        </div>
+    </div>
+    <!--塌陷-清除浮动-->
+    <div class="clearfix"></div>
+    <!--gallery section-->
+    <div class="gallery">
+        <div class="wrap">
+            <h1>GALLERY</h1>
+            <div class="hr"></div>
+            <p>Lorem Ipsum is simple dummy text of the printing and typesetting<br/>industry. Lorem Ipsum has been the industry's standard dummy<br/>text ever since the 1500s.
+            </p>
+        </div>
+        <div class="container">
+            <div class="info">
+                <img src="img/03-01.jpg">
+                <p>SCIENCE LAB</p>
+            </div>
+            <div class="info">
+                <img src="img/03-02.jpg">
+                <p>INDOOR STADIUM</p>
+            </div>
+            <div class="info">
+                <img src="img/03-03.jpg">
+                <p>TRANSPORTATION</p>
+            </div>
+            <div class="info">
+                <img src="img/03-04.jpg">
+                <p>KIDS ROOM</p>
+            </div>
+            <div class="info">
+                <img src="img/03-05.jpg">
+                <p>MEDITATION CLASSES</p>
+            </div>
+            <div class="info">
+                <img src="img/03-06.jpg">
+                <p>KIDS PLAY GROUND</p>
+            </div>
+        </div>
+    </div>
+    <!--footer section-->
+    <div class="footer">
+        <p>&copy; 2016 imooc.com 京ICP备13046642号</p>
+    </div>
+</body>
+</html>

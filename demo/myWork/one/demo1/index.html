@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS网页布局</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+    <!-- 头部 -->
+    <div class="header">
+        <div class="nav">
+            <!-- logo -->
+            <a href="#" class="logo"><img src="image/logo.png" alt="回到首页"></a>
+            <!-- 导航 -->
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">图片</a></li>
+                <li><a href="#">视频</a></li>
+                <li><a href="#">手记</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 主体 -->
+    <div class="main">
+        <!-- 大图 -->
+        <div class="pic">
+            <img src="image/1.jpeg">
+        </div>
+        <!-- 遮罩层 -->
+        <div class="wrap"></div>
+        <!-- 遮罩层上面内容 -->
+        <div class="wrap-top">
+            <p>MY BEAUTIFUL LIFE</p>
+            <button>LOOC MORE &nbsp; &gt;</button>
+        </div>
+
+        <!-- 主体内容 -->
+        <div class="content">
+            <!-- 上部分 -->
+            <div class="top">
+                <div class="share">
+                    <div class="icon weibo">
+                        <a href="#"><img src="image/weibo.png"></a>
+                        <div class="comm">MICROBLOG</div>
+                    </div>
+                    <div class="icon weixin">
+                        <a href="#"><img src="image/weixin.png"></a>
+                        <div class="comm">WECHAT</div>
+                    </div>
+                    <div class="icon qq">
+                        <a href="#"><img src="image/QQ.png"></a>
+                        <div class="comm">QQ</div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="intro">
+                    "I want to give good things to record down, <br/>after the recall will be very beautiful."
+                </div>
+                <div class="pic-section">
+                    <div class="group">
+                        <img src="image/03-01.jpg">
+                        <div class="des1">Cool Image</div>
+                        <div class="des2">Record The Picture</div>
+                    </div>
+                    <div class="group">
+                        <img src="image/03-02.jpg">
+                        <div class="des1">Great Picture</div>
+                        <div class="des2">Record The Picture</div>
+                    </div>
+                    <div class="group">
+                        <img src="image/03-03.jpg">
+                        <div class="des1">Cool Image</div>
+                        <div class="des2">Record The Picture</div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <!-- 下部分 -->
+            <div class="bottom">
+                <div class="bottom-content">
+                    <div class="title">
+                        FROM THE PHOTO ALBUM
+                    </div>
+                    <div class="pic-wrap">
+                        <dl>
+                            <dt><img src="image/04-01.jpg"></dt>
+                            <dd>Life is like a book, just read more and more refined, more write more carefully. When read, mind open, all things have been indifferent to heart. Life is the precipitation.</dd>
+                        </dl>
+                        <dl>
+                            <dt><img src="image/04-02.jpg"></dt>
+                            <dd>Life is like a cup of tea, let people lead a person to endless aftertastes. You again good taste, it will always have a different taste, different people will have different taste more.</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部 -->
+    <div class="footer">
+        <p>© 2016 imooc.com 京ICP备13046642号</p>
+    </div>
+</body>
+</html>
