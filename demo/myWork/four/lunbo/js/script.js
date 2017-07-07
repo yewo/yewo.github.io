@@ -10,7 +10,11 @@ var index = 0,
     dots = byId("dots").getElementsByTagName("span"),
     prev = byId("prev"),
     next = byId("next"),
-    len = pics.length;
+    len = pics.length,
+    menu = byId("menu-content"),
+    menuItems = menu.getElementsByClassName("menu-item"),
+    subMenu = byId("sub-menu"),
+    innerBox = subMenu.getElementsByClassName("inner-box");
 
 function slideImg() {
     var container = byId("container");
@@ -55,7 +59,37 @@ function slideImg() {
         if(index<0) index = len-1;
         changeImg();
     }
-
+    //导航菜单
+    //遍历主菜单，且绑定事件
+    for(var m=0;m<menuItems.length;m++) {
+        // 给每一个menu-item定义data-index的属性，作为索引
+        menuItems[m].setAttribute("data-index",m);
+        menuItems[m].onmouseover = function () {
+            subMenu.className = "sub-menu";
+            idx = this.getAttribute("data-index");
+            //遍历所有子菜单，将每一个都隐藏
+            for(var j=0;j<innerBox.length;j++) {
+                innerBox[j].style.display = "none";
+                menuItems[j].style.background = "none";
+            }
+            innerBox[idx].style.display = "block";
+            menuItems[idx].style.background = "rgba(0,0,0,0.1)"
+        }
+        menuItems[m].onmouseout = function(){
+            menuItems[idx].style.background = "rgba(0,0,0,0)";
+        }
+    }
+    menu.onmouseout = function () {
+        subMenu.className = "sub-menu hide";
+    }
+    subMenu.onmouseover = function () {
+        this.className = "sub-menu";
+        menuItems[idx].style.background = "rgba(0,0,0,0.1)";
+    }
+    subMenu.onmouseout = function () {
+        this.className = "sub-menu hide";
+        menuItems[idx].style.background = "rgba(0,0,0,0)";
+    }
 }
 
 // 切换图片
@@ -71,8 +105,3 @@ function changeImg() {
 }
 
 slideImg();
-
-
-
-
-
