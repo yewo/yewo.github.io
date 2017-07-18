@@ -375,6 +375,71 @@ footer span {
     color: rgba(255, 255, 255, 0.6);;
 }
 
+/* 弹出层窗体 */
+.layer-pop {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 350px;
+    height: 280px;
+    background-color: #fff;
+    margin: auto;
+    z-index: 999;
+}
+/* 弹出层按钮 */
+.layer-close {
+    float: right;
+    width: 18px;
+    height: 18px;
+    color: #fff;
+    background-color: #ccc;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.layer-close:hover {
+    background-color: #777;
+}
+/* 弹出层登录注册内容 */
+.login,.rege {
+    width: 300px;
+    margin: 0 auto;
+}
+h4 {
+    font-size: 18px;
+    color: #000;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+input {
+    width: 283px;
+    height: 40px;
+    margin-top: 10px;
+    padding-left: 15px;
+    font-family: '微软雅黑';
+    font-size: 14px;
+    border: 1px solid #ccc;
+}
+input[type=submit] {
+    width: 300px;
+    color: #fff;
+    background-color: #007fff;
+    border: none;
+    border-radius: 3px;
+    margin-top: 25px;
+}
+.error-msg {
+    display: inline-block;
+    color: #f01414;
+    font-size: 10px;
+    height: 8px;
+}
+
 /*导航遮罩层*/
 .maskup {
     display: none;
