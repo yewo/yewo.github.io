@@ -16,7 +16,9 @@
         <!--导航-->
         <nav>
             <ul>
-                <li id='sidebar_trigger'>
+                <li><a id="loginLink" href="#">登录</a></li>
+                <li><a id="regeLink" href="#">注册</a></li>
+                <li class="menu" id='sidebar_trigger'>
                     <a href="#">MENU</a>
                 </li>
             </ul>
@@ -133,6 +135,39 @@
             <span>&copy; 2017 all rights Yeel · HTML5</span>
         </div>
     </footer>
+
+    <!-- 弹出层遮罩 -->
+    <div class="maskup" id="maskup"></div>
+    <!-- 弹出层窗体 -->
+    <div class="layer-pop" id="layer-pop">
+        <!-- 弹出层关闭按钮 -->
+        <div class="layer-close" id="layer-close">×</div>
+        <!-- 弹出层内容 -->
+        <div class="layer-content" id="layer-content">
+
+        </div>
+    </div>
+    <!-- 登录窗口 -->
+    <div id="loginHtml" style="display: none;">
+        <form class="login">
+            <h4 class="title">登录</h4>
+            <input id="username" type="text" class="input" name="username" placeholder="请填写手机号或邮箱">
+            <p class="error-msg"></p>
+            <input id="password" type="password" class="input" name="password" placeholder="请输入密码">
+            <input id="loginSubmitBtn" type="submit" class="submit" name="submit" value="登录">
+        </form>
+    </div>
+    <!-- 注册窗口 -->
+    <div id="regeHtml" style="display: none;">
+        <form class="rege">
+            <h4 class="title">注册</h4>
+            <input id="username" type="text" class="input" name="username" placeholder="请填写手机号或邮箱">
+            <input id="password" type="password" class="input" name="password" placeholder="请输入密码">
+            <input id="repassword" type="password" class="input" name="repassword" placeholder="重复输入密码">
+            <input id="regeSubmitBtn" type="submit" class="submit" name="submit" value="注册">
+        </form>
+    </div>
+
     <!--导航遮罩层-->
     <div class="maskup">
     </div>
