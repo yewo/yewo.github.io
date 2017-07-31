@@ -1,0 +1,64 @@
+/* 基本样式 */
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Microsoft YaHei';
+}
+a {
+    text-decoration: none;
+}
+
+/* 菜单 */
+.section {
+    width: 1200px;
+    height: 500px;
+    margin: 50px auto;
+    border: 1px dashed #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.menu {
+    width: 1200px;
+    height: 40px;
+    text-align: center;
+}
+.menu a {
+    float: left;
+    width: 300px;
+    height: 40px;
+    line-height: 40px;
+    color: #666;
+    font-size: 20px;
+}
+.menu a.select {
+    background: #fc0;
+    border-radius: 5px;
+    font-weight: bold;
+    border-bottom-color:#FFF;
+}
+
+/* 轮播图 */
+.slide {
+    width: 1200px;
+    height: 460px;
+    background-color: #ddd;
+}
+.slide-img {
+    width: 1200px;
+    height: 460px;
+    background-repeat: no-repeat;
+}
+.slide1 {
+    background: url('../img/1.jpg');
+}
+.slide2 {
+    background: url('../img/2.jpg');
+}
+.slide3 {
+    background: url('../img/3.jpg');
+}
+.slide4 {
+    background: url('../img/4.jpg');
+}
