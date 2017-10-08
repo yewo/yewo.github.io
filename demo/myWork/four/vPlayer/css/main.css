@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 640px;
+    height: 360px;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+    background-color: #dedede;
+}
+/* 标题 */
+.caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #ccc;
+    background-color: #1f1f1f;
+    z-index: 1;
+}
+/* 控制区域 */
+.control {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    color: #ccc;
+    background-color: #1f1f1f;
+    z-index: 1;
+}
+.control .top {
+    height: 4px;
+}
+.control .top .progress {
+    width: 100%;
+    height: 4px;
+    position: relative;
+    float: left;
+    cursor: pointer;
+    background-color: #404040;
+    border-radius: 5px;
+}
+.control .top .progress .timebar {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 5px;
+    z-index: 3;
+    width: 0px;
+    background-color: #97ff00;
+}
+
+/* 按钮控制 */
+.control .bottom {
+    clear: both;
+    background-color: #1f1f1f;
+}
+.control .bottom .button {
+    float: left;
+    width: 32px;
+    height: 32px;
+    padding: 0 5px;
+    cursor: pointer;
+}
+.control .bottom .play {
+    background: url("../image/start.png") no-repeat 15px 5px;
+}
+.control .bottom .pause {
+    background: url("../image/pause.png") no-repeat 15px 5px;
+}
+.control .bottom .mute {
+    position: absolute;
+    right: 165px;
+    top: 8px;
+    background: url("../image/mute.png") no-repeat 15px 4px;
+}
+.control .bottom .time {
+    width: 30%;
+    font-size: 12px;
+    text-align: center;
+    line-height: 40px;
+}
+.control .bottom .sound {
+    position: absolute;
+    right: 165px;
+    top: 8px;
+    background: url("../image/sound.png") no-repeat 15px 4px;
+}
+.control .bottom .volume {
+    position: relative;
+    right: 86px;
+    bottom: 23px;
+    float: right;
+    display: block;
+    cursor: pointer;
+    width: 70px;
+    height: 3px;
+    background-color: #404040;
+}
+.control .bottom .volume .volumeBar {
+    display: block;
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #57a900;
+    z-index: 2;
+}
+.control .bottom .fullScreen {
+    position: absolute;
+    right: 0;
+    top: 12px;
+    background: url("../image/full.png") no-repeat;
+}
+.control .bottom .screenOff {
+    position: absolute;
+    right: 0;
+    top: 12px;
+    background: url("../image/screenOff.png") no-repeat;
+}
+.loading {
+    position: absolute;
+    width: 54px;
+    height: 55px;
+    left: 50%;
+    top: 50%;
+    margin-left: -27px;
+    margin-top: -27px;
+    z-index: 1;
+    background: url("../image/loading.gif") no-repeat;
+}

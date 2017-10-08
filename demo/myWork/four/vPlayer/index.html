@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>视频播放器</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <script src="https://cdn.bootcss.com/jquery/3.0.0/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <video id="myVideo">
+            <source src="Unbroken-坚不可摧.mp4" type="video/mp4">
+            您的浏览器不支持video标签
+        </video>
+        <!-- 标题 -->
+        <div class="caption">坚不可摧</div>
+        <!-- 控制区域 -->
+        <div class="control">
+            <!-- 上面进度条 -->
+            <div class="top">
+                <div class="progress">
+                    <div class="timebar"></div>
+                </div>
+            </div>
+            <!-- 下面控制按钮 -->
+            <div class="bottom">
+                <div class="button play" id="playBtn"></div>
+                <div class="time">
+                    <span id="currentTime">00:00</span>
+                    <span>/</span>
+                    <span id="duration">00:00</span>
+                </div>
+                <!-- 音量 -->
+                <div class="volume">
+                    <span class="volumeBar"></span>
+                </div>
+                <!-- 声音按钮 -->
+                <div class="button sound" id="soundBtn"></div>
+                <!-- 全屏按钮 -->
+                <div class="button fullScreen" id="fullScreenBtn"></div>
+            </div>
+        </div>
+        <!-- loading -->
+        <div class="loading"></div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
